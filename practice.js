@@ -131,9 +131,10 @@ let brittanyObj = {
 
 }
 function showValues(obj) {
+  let value = "name" + "movie" + "food"
   
-
-}
+  
+} 
 console.log(showValues(brittanyObj))
 /// ////////////// PROBLEM 8 ///////////////////
 
@@ -213,7 +214,11 @@ const {color, make, model, year} = carDetails
 */
 
 function greeting(obj) {
-  //Code Here
+  firstName
+  lastName
+  title
+  let {firstName, lastName, title} = newVar
+  
 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -230,7 +235,13 @@ function greeting(obj) {
   Sum up the values and return the total number.
 */
 
-//Code Here
+function totalPopulation(obj){
+//   let num = 
+//   utah: (num)
+//   california: (num)
+//   texas: (num)
+//   arizona: (num)
+}
 
 /// ////////////// PROBLEM 14 ///////////////////
 
@@ -242,8 +253,9 @@ function greeting(obj) {
   Return false otherwise.
 */
 
-//Code Here
+function usCanadaBorder(latitude, longitude){
 
+}
 /// ////////////// PROBLEM 15 ///////////////////
 
 // Do not edit the code below.
@@ -288,7 +300,15 @@ const employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for (let i =0; i < employees.length; i++){
+    if (firstName[i] = "Theo"){
+      delete employees.firstName;
+    } else if (firstName[i] = "Lorie"){
+      department['Research and Development'] = "HR"
+    }
+  } return employeeUpdater
+}
 
 /// ////////////// PROBLEM 16 ///////////////////
 
@@ -315,8 +335,8 @@ const cat = {
 */
 
 //Code Here
-let grumpyActivity;
-let fluffy2ndFriend;
+let grumpyActivity = cat.catFriends[activites];
+let fluffy2ndFriend = catFriends.name[1];
 
 /// ////////////// PROBLEM 17 ///////////////////
 
@@ -354,8 +374,14 @@ const myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+function recordCleaner(){
+  for (let record of myCar[0].accidents){
+    for (const key in driver){
+      atFaultForAccident.accidents = false 
+    } return 
+  }
 
+}
 /// ////////////// PROBLEM 18 ///////////////////
 
 /*
