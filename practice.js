@@ -124,18 +124,14 @@ for (const property in obj){
 /*
   Inside the function showValues, concatenate each of the values in the given object and return the concatenated string.
 */
-let brittanyObj = {
-  name: 'Brit',
-  movie: "shes the man",
-  food: "pizza"
 
-}
 function showValues(obj) {
-  let value = "name" + "movie" + "food"
-  
+  // let newArr = "";
+  // console.log(obj)
+  // newArr = newArr + obj
   
 } 
-console.log(showValues(brittanyObj))
+
 /// ////////////// PROBLEM 8 ///////////////////
 
 /*
@@ -145,9 +141,14 @@ console.log(showValues(brittanyObj))
 */
 
 function makeCard(cardNumber, expirationDate, securityCode){
-  
+console.log(cardNumber, securityCode, expirationDate)
+let obj = {
+  cardNumber: cardNumber,
+  securityCode: securityCode,
+  expirationDate: expirationDate
 }
-
+    return obj
+}
 /// ////////////// PROBLEM 9 ///////////////////
 
 /*
@@ -214,10 +215,7 @@ const {color, make, model, year} = carDetails
 */
 
 function greeting(obj) {
-  firstName
-  lastName
-  title
-  let {firstName, lastName, title} = newVar
+ let {firstName, lastName, title} = obj
   
 
   // Do not edit the code below.
@@ -253,7 +251,9 @@ function totalPopulation(obj){
   Return false otherwise.
 */
 
-function usCanadaBorder(latitude, longitude){
+function usCanadaBorder(obj){
+  // let longitude = obj[0]
+  // let latitude = obj[1]
 
 }
 /// ////////////// PROBLEM 15 ///////////////////
@@ -302,12 +302,13 @@ const employees = [
 
 function employeeUpdater(){
   for (let i =0; i < employees.length; i++){
-    if (firstName[i] = "Theo"){
-      delete employees.firstName;
-    } else if (firstName[i] = "Lorie"){
-      department['Research and Development'] = "HR"
+    if (employees[i].firstName === "Theo"){
+        employees.splice(i,1)
+    } 
+    if (employees[i].firstName === "Lorie"){
+      employees[i].department = "HR"
     }
-  } return employeeUpdater
+  } return employees
 }
 
 /// ////////////// PROBLEM 16 ///////////////////
@@ -335,8 +336,8 @@ const cat = {
 */
 
 //Code Here
-let grumpyActivity = cat.catFriends[activites];
-let fluffy2ndFriend = catFriends.name[1];
+let grumpyActivity = cat.catFriends[0].activities[1];
+let fluffy2ndFriend = cat.catFriends[1].name;
 
 /// ////////////// PROBLEM 17 ///////////////////
 
@@ -375,11 +376,11 @@ const myCar = {
 */
 
 function recordCleaner(){
-  for (let record of myCar[0].accidents){
-    for (const key in driver){
-      atFaultForAccident.accidents = false 
-    } return 
-  }
+  // for (let record of myCar[0].accidents){
+  //   for (const key in driver){
+  //     atFaultForAccident.accidents = false 
+  //   } return 
+  // }
 
 }
 /// ////////////// PROBLEM 18 ///////////////////
